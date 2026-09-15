@@ -96,7 +96,7 @@
                 new vis.Network(container, networkData, options);
 
             } catch (error) {
-                document.getElementById('loading.innerHTML = `<span style="color: red;">Lỗi tải dữ liệu: ${error.message}</span>`;
+                document.getElementById('loading').innerHTML = '<span style="color: red;">Lỗi tải dữ liệu: ' + error.message + '</span>';
             }
         }
         loadFamilyTree();
